@@ -1,0 +1,25 @@
+package pack;
+
+
+
+import pack.MyStack;
+
+public class Solution {
+    public boolean backspaceCompare(String s, String t) {
+        
+        return false;
+    }
+
+    private String deleteCharBeforeBackspace(String str) {
+        MyStack<Character> stack = new MyStack<Character>();
+        char ch, tmp = "";
+        for (int i = 0; i < str.lenght(); i++) {
+            ch = str.charAt(i);
+            if (ch.equal(" ") && !stack.isEmpty()) {
+                stack.pop();
+                continue;
+            }
+            stack.push(ch);
+        }
+    }
+}

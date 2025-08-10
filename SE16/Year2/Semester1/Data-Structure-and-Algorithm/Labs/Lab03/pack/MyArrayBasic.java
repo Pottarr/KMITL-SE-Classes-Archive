@@ -38,6 +38,9 @@ public class MyArrayBasic {
     }
 
     public void delete(int index) {
+        if (this.size == 0) {
+            return;
+        }
         for (int i = index; i < this.size - 1; i++) {
             this.data[i] = this.data[i + 1];
         }
