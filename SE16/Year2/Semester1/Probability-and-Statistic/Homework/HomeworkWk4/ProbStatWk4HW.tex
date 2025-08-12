@@ -1,0 +1,187 @@
+\documentclass[12pt]{report} % You can use 'article' or 'book' class as well
+
+\usepackage{graphicx} % For including images
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{forest}
+\usepackage{multicol}
+\begin{document}
+
+% Title page
+\begin{titlepage}
+	\centering
+	\vspace*{1cm} % Adjusts vertical space for the image
+	% Insert your image (use the actual path and filename of your image)
+	\includegraphics[width=0.3\textwidth]{../images/KMITL Logo.png} % Adjust width as needed
+
+	\vspace{1cm} % Vertical space after the image
+	{\LARGE \textbf{Week 4 Homework}} \\[0.5cm] % Title
+	\vspace{0.5cm}
+	{\large \textbf{Probability Model and Data Analysis}} \\[0.5cm]
+    {\large \textbf{Software Engineering Program,}} \\[0.5cm]
+	{\large \textbf{Department of Computer Engineering,}} \\[0.5cm]
+	{\large \textbf{School of Engineering, KMITL}} \\[1cm]
+	{\large 67011352 Theepakorn Phayonrat} \\[0.5cm] % Authors (Use \\ the separate authors)
+\end{titlepage}
+
+\section*{Homework of Law of Tatal Probability and Bayes' Theorem (with a tree diagram)}
+
+\subsection*{Context}
+
+The local government of Bangkok wants to interpret ATK test results
+from people with symptoms and people who have been in close contact
+with people who are known to be infected. It is found that there in
+a $70\%$ of a test population having COVID-19 infection. For the ATK
+test results, there are not $100\%$ accuracy. The result may be
+positive” (a person may test “positive” and not be infected), or the
+result may be “false negative” (a person may test “negative” and
+however be infected). From the ATKs that are used, it is found that
+the probability that a person tests positive if s/he has COVID (a true
+positive result) is 0.95, i.e,
+
+$P(Positive \mid COVID) = 0.95$, and
+
+\noindent the probability that a person tests negative if she is not
+infected, or healthy (a true negative result) is 0.90, i.e,
+
+$P(Negative \mid healthy) = 0.90$.
+
+\subsection*{Question 1}
+
+Sketch a tree diagram and find the results of the questions $2)$ and
+$3)$ using a tree diagram \\
+
+\subsection*{Answer}
+
+From the context given earlier, we know that \\
+$\oplus$ is an event when a test person get a positive test result. \\
+$\ominus$ is an event when a test person get a negative test result. \\
+$C$ is an event when a test person is infected with COVID \\
+$H$ is an event when a test person is healthy \\
+
+\newpage
+
+\begin{forest}
+for tree={
+  grow'=right,                 % Tree grows left to right
+  draw, circle,                % All nodes are circles with border
+  minimum size=1.2em,          % Consistent node size
+  inner sep=1pt,               % Padding inside nodes
+  parent anchor=east,          % Connect parent from right side
+  child anchor=west,           % Connect child from left side
+  edge path={
+    \noexpand\path [draw, \forestoption{edge}]
+    (!u.parent anchor) -- (.child anchor)\forestoption{edge label};
+  },
+  s sep=10mm,                  % Sibling separation
+  l sep=15mm                   % Level separation
+}
+% Tree starts here
+[, fill=gray!30,
+    [$C$, edge label={node[midway,above] {0.70}}
+        [$\oplus$, edge label={node[midway,above] {0.95}}
+            [$\alpha$]
+        ]
+        [$\ominus$, edge label={node[midway,below] {0.05}}
+            [$\beta$]
+        ]
+    ]
+    [$H$, edge label={node[midway,below] {0.30}}
+        [$\oplus$, edge label={node[midway,above] {0.10}}
+            [$\gamma$]
+        ]
+        [$\ominus$, edge label={node[midway,below] {0.90}}
+            [$\delta$]
+        ]
+    ]
+]
+\end{forest}
+
+\begin{multicols}{2} \notag
+
+\begin{align}
+    \therefore $P[C\oplus] & = \alpha \\
+    & = (0.70)(0.95) \\
+    & = 0.665 \\
+    \\
+    \therefore $P[H\oplus] & = \gamma \\
+    & = (0.30)(0.10) \\
+    & = 0.030 \\
+    \\
+\end{align}
+
+\columnbreak
+
+\begin{align}
+    \therefore $P[C\ominus] & = \beta \\
+    & = (0.70)(0.05) \\
+    & = 0.035 \\
+    \\
+    \therefore $P[H\ominus] & = \delta \\
+    & = (0.30)(0.90) \\
+    & = 0.270 \\
+    \\
+\end{align}
+
+\end{multicols}
+
+\newpage
+
+\subsection*{Question 2}
+
+Find the Probability that a test the person is healthy if s/he
+receives a negative test result. Give the answer in a porpotion in
+a porpotion in $\%$ by rounding the 2 decimal places.
+
+\subsection*{Solution}
+
+\noindent And from the context given earlier, we also know that \\
+
+\begin{equation} \notag
+\begin{split}
+    \therefore $P[H \mid \ominus] & = \frac{P[\ominus H]}{P[\ominus]}$ \\
+    & = \frac{P[H \ominus]}{P[H \ominus] + P[C \ominus]} \\
+    & = \frac{0.270}{0.270 + 0.035} \\
+    & = \frac{0.270}{0.305} \\
+    & \approx 0.8852 \\
+    & = 88.52\% \\
+    \\
+\end{split}
+\end{equation}
+
+\subsection*{Answer}
+
+$\therefore$ the Probability that a test person is healthy receives
+a negative test result is in porpotion of $88.52\%$
+
+\newpage
+
+\subsection*{Question 3}
+
+Find the Probability that a test person has COVID if s/he receives
+a positive test result. Give the answer in a porpotion in \% by
+rounding to 2 decimal places.
+
+\subsection*{Solution}
+
+From the context given earlier, we know that \\
+
+\begin{equation} \notag
+\begin{split}
+    \therefore $P[C \mid \oplus] & = \frac{P[\oplus C]}{P[\oplus]}$ \\
+    & = \frac{P[C \oplus]}{P[H \oplus] + P[C \oplus]} \\
+    & = \frac{0.665}{0.030 + 0.665} \\
+    & = \frac{0.665}{0.695} \\
+    & \approx 0.9568 \\
+    & = 95.68\% \\
+    \\
+\end{split}
+\end{equation}
+
+
+\subsection*{Answer}
+
+$\therefore$ the Probability that a test person has COVID receives
+a positive test result is in porpotion of $95.68\%$
+
+\end{document}

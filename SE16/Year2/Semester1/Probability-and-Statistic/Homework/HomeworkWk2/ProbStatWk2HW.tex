@@ -1,0 +1,120 @@
+\documentclass[12pt]{report} % You can use 'article' or 'book' class as well
+
+\usepackage{graphicx} % For including images
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+
+\begin{document}
+
+% Title page
+\begin{titlepage}
+	\centering
+	\vspace*{1cm} % Adjusts vertical space for the image
+	% Insert your image (use the actual path and filename of your image)
+	\includegraphics[width=0.3\textwidth]{../images/KMITL Logo.png} % Adjust width as needed
+
+	\vspace{1cm} % Vertical space after the image
+	{\LARGE \textbf{Week 2 Homework}} \\[0.5cm] % Title
+	\vspace{0.5cm}
+	{\large \textbf{Probability Model and Data Analysis}} \\[0.5cm]
+    {\large \textbf{Software Engineering Program,}} \\[0.5cm]
+	{\large \textbf{Department of Computer Engineering,}} \\[0.5cm]
+	{\large \textbf{School of Engineering, KMITL}} \\[1cm]
+	{\Large 67011352 Theepakorn Phayonrat}[0.5cm] % Authors (Use \\ the separate authors)
+\end{titlepage}
+
+\section*{Homework of Conditional Probability}
+
+\subsection*{Question 1}
+
+With respect of Example 1.16, consider the priori probability model\\
+
+\noindent $P[rr] = 0.01, P[ra] = 0.01, P[ar] = 0.01, P[aa] = 0.97$.\\
+
+\noindent Let $B$ denote the event that the first chip tested image
+rejected and similiarly, let denote $A$ the event that the second
+circuit is a failure.\\
+
+\noindent Find $P[{A}^{c}|B]$ and $P[{A}^{c}|{B}^{c}]$
+
+\subsection*{Solution}
+
+From the information given by the question, we know that
+
+\begin{multicols}{2} \notag
+
+\begin{align}
+P[A] & = P[rr] + P[ar] \\
+& = 0.01 + 0.01 \\
+& = 0.02 \\
+\\
+P[B] & = P[rr] + P[ra] \\
+& = 0.01 + 0.01 \\
+& = 0.02 \\
+\\
+P[{A}^{c}B] & = P[ra] \\
+& = 0.01 \\
+\\
+\therefore P[{A}^{c}|{B}] & = \frac{P[{A}^{c}B]}{P[B]} \\
+& = \frac{0.01}{0.02} = \frac{1}{2} = 0.5 \\
+\\
+\end{align}
+
+\columnbreak
+
+\begin{align}
+P[{A}^{c}] & = P[aa] + P[ar] \\
+& = 0.01 + 0.01 \\
+& = 0.02 \\
+\\
+P[{B}^{c}] & = P[aa] + P[ar] \\
+& = 0.97 + 0.01 \\
+& 0.98 \\
+\\
+P[{A}^{c}{B}^{c}] & = P[aa] \\
+& = 0.97 \\
+\\
+\therefore P[{A}^{c}|{B}] & = \frac{P[{A}^{c}{B}^{c}]}{P[{B}^{c}]} \\
+& = \frac{0.97}{0.98} \\
+\\
+\end{align}
+
+\end{multicols}
+
+\newpage
+
+\subsection*{Question 2}
+
+Two manufacturing plants produce similar parts. Plant 1 produces 1,000
+parts, 100 of which are defective. Plant 2 produces 2,000 parts, 150
+of which are defective. A part is selected at random and found to be
+defective. What is the probability that it came from plant 1?
+(Hint: Let B be the event that "the part selected is defective," and
+let A be the event that "gthe part selected came from plant 1." Find
+$P[A|B]$)
+
+\subsection*{Solution}
+
+From the information given by the question, we know that
+
+\begin{equation} \notag
+\begin{split}
+P[A] & = \frac{parts\ produced\ from\ plant\ 1}{all\ part\ from\ both\ plants} \\
+& = \frac{100}{3000} \\
+\\
+P[B] & = \frac{all\ defected\ parts}{all\ parts\ from\ both\ plants} \\
+& = \frac{250}{3000} \\
+\\
+P[AB] & = \frac{parts\ from\ plant\ 1\ and\ defected}{all\ parts\ from\ both\ plants} \\
+& = \frac{100}{3000} \\
+\\
+\therefore P[A|B] & = \frac{P[AB]}{P[B]} \\ & = \frac{\frac{100}{3000}}{\frac{250}{3000}} = \frac{100}{250} = \frac{2}{5} = 0.4
+\end{split}
+\end{equation}
+
+\subsection*{Answer}
+$\therefore$ The probability of getting parts produced in plant 1 where
+randomly inspect where the part is defective is equal to $0.4$
+
+\end{document}
