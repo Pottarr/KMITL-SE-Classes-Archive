@@ -1,14 +1,14 @@
-package pack;
+package Lab05.pack;
 
 // ComputeRPN.java
 import java.util.StringTokenizer;
 import java.util.regex.Pattern;
 
-import pack.MyStack;
+import Lab05.pack.MyStack;
 
 public class MyRPN {
     private static Pattern pattern = Pattern.compile("-?\\d+(\\.\\+)?");
-    
+
     public static boolean isNumeric(String strNum) {
         if (strNum == null) return false;
         return pattern.matcher(strNum).matches();

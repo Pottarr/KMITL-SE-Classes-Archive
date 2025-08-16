@@ -1,3 +1,5 @@
+package Lab05;
+
 import java.util.StringTokenizer;
 
 import pack.MyRPN;

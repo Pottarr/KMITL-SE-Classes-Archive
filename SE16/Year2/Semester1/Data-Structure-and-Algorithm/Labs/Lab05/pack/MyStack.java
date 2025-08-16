@@ -1,4 +1,4 @@
-package pack;
+package Lab05.pack;
 
 import java.util.ArrayList;
 
@@ -15,8 +15,7 @@ public class MyStack<T> {   // extends ArrayList<T> {
     }
 
     public T peek() {
-        return items.get(items.size() - 1);
-    }
+        return items.getLast(); }
 
     public int size() {
         return items.size();
