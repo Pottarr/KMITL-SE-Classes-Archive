@@ -8,6 +8,7 @@
 | 3 | [01/08/2025](Lab03/Lab03.md)[^2] |
 | 4 | [25/07/2025](Lab04/Lab04.md) |
 | 5 | [08/08/2025](Lab05/Lab05.md) |
+| 6 | [15/08/2025](Lab06/Lab06.md) |
 
 [^1]: Class Homework
 [^2]: Take Home Lab
