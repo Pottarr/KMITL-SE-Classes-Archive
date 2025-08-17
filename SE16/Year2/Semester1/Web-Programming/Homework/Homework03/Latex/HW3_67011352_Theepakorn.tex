@@ -1,0 +1,546 @@
+\documentclass[12pt]{report} % You can use 'article' or 'book' class as well
+
+\usepackage{graphicx} % For including images
+\usepackage{minted}
+
+\begin{document}
+
+% Title page
+\begin{titlepage}
+	\centering
+	\vspace*{1cm} % Adjusts vertical space for the image
+	% Insert your image (use the actual path and filename of your image)
+	\includegraphics[width=0.3\textwidth]{../../images/KMITL Logo.png} % Adjust width as needed
+
+	\vspace{1cm} % Vertical space after the image
+	{\LARGE \textbf{Homework 3}} \\[0.5cm] % Title
+	\vspace{0.5cm}
+	{\large \textbf{01286233 Web Programming}} \\[0.5cm]
+	{\large \textbf{Software Engineering Program,}} \\[0.5cm]
+	{\large \textbf{Department of Computer Engineering,}} \\[0.5cm]
+	{\large \textbf{School of Engineering, KMITL}} \\[1cm]
+	{\Large 67011352 Theepakorn Phayonrat} \\[0.5cm] % Authors (Use \\ the separate authors)
+\end{titlepage}
+
+\section*{Code}
+
+\begin{minted}[fontsize=\small]{html}
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Unofficial Transcript</title>
+      <style>
+      .hasBorder {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      .noBorder {
+        border: hidden;
+        border-collapse: collapse;
+      }
+      .fullInput {
+        width: 100%;
+        box-sizing: border-box;
+      }
+      input {
+        box-sizing: border-box;
+      }
+      p {
+        text-align: center;
+      }
+      </style>
+  </head>
+  <body>
+      <table class="noBorder" style="width:100%">
+          <tr>
+              <td style="width:20%"></td>
+              <td style="width:60%">
+                  <form>
+                      <table class="hasBorder" style="width:100%">
+                          <tr style="width:100%">
+                              <td style="width:1%"></td>
+                              <td style="width:98%">
+                                  <table class="noBorder" style="width:100%">
+                                      <tr>
+                                        <th colspan="5" class="noBorder">
+                                          <h1>( Unofficial Transcript )</h1>
+                                        </th>
+                                      </tr>
+                                      <tr>
+                                        <td colspan="4"
+                                        style="text-align: center;">
+                                          <h3>School of Engineering</h3>
+                                        </td>
+                                        <td colspan="1">
+                                          <img style="border: 1px solid black"
+                                          src="https://static.vecteezy.com/
+                                          system/resources/previews/
+                                          005/544/718/non_2x/
+                                          profile-icon-design-free-vector.jpg"
+                                          alt="user pfp" width=100%>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <th style="width: 25%; text-align:left;">
+                                          <label for="">Name</label>
+                                          <input class="fullInput"
+                                          type="input" name=""
+                                          style="width:80%"
+                                          placeholder="Mr./Ms. Nxxxx Xxxxxxx" />
+                                          <br>
+                                          <label for="">Date of Birth</label>
+                                          <input class="fullInput"
+                                          type="input" name=""
+                                          style="width:60%"
+                                          placeholder="MMMM DD. 20xx" />
+                                          <br>
+                                          <label for="">Date of Admission</label>
+                                          <input class="fullInput"
+                                          type="input" name=""
+                                          style="width:50%"
+                                          placeholder="20xx" />
+                                          <br>
+                                          <label for="Degree">Degree</label>
+                                          <input class="fullInput"
+                                          type="input" name=""
+                                          style="width:75%"
+                                          placeholder="Bachelor of Engineering" />
+                                          <br>
+                                          <label for="Major">Major</label>
+                                          <input class="fullInput"
+                                          type="input" name=""
+                                          style="width:80%"
+                                          placeholder="Software Engineering" />
+                                          <br>
+                                        </th>
+                                        <th style="width: 20%">
+                                        </th>
+                                        <th style="width: 25%; text-align: left;">
+                                          <label for="Degree">Degree</label>
+                                          <input class="fullInput"
+                                          type="input" name=""
+                                          style="width:50%"
+                                          placeholder="Bachelor of Engineering" />
+                                          <br>
+                                          <label for="Major">Major</label>
+                                          <input class="fullInput"
+                                          type="input" name=""
+                                          style="width:50%"
+                                          placeholder="Software Engineering" />
+                                          <br>
+                                          <br>
+                                        </th>
+                                        <th style="width: 20%"></th>
+                                        <th style="width: 10%"></th>
+                                      </tr>
+                                  </table>
+                              <td style="width:1%"></td>
+                          </tr>
+                          <tr>
+                            <td style="width:1%"></td>
+                            <td style="width: 98%">
+                              <table class="hasBorder" style="width:100%">
+                                <tr>
+                                  <th class="hasBorder"
+                                  width="45%">Course Title</th>
+                                  <th class="hasBorder"
+                                  width="2.5%"
+                                  style="font-size:0.5rem">CREDIT</th>
+                                  <th class="hasBorder"
+                                  width="2.5%"
+                                  style="font-size:0.5rem">GRADE</th>
+                                  <th class="hasBorder"
+                                  width="45%">Course Title</th>
+                                  <th class="hasBorder"
+                                  width="2.5%"
+                                  style="font-size:0.5rem">CREDIT</th>
+                                  <th class="hasBorder"
+                                  width="2.5%"
+                                  style="font-size:0.5rem">GRADE</th>
+                                </tr>
+                                <tr>
+                                  <td class="hasBorder" width="45%">
+                                    <p><b><u>Tranfer Credit</u></b></p>
+                                    <p>
+                                      <input style="width: 15%;"
+                                      type="" name=""
+                                      placeholder="13006208" />
+                                      <input style="width: 80%"
+                                      type="" name=""
+                                      placeholder="ACADEMIC ENGLISH 1" />
+                                      <input style="width: 15%;"
+                                      type="" name=""
+                                      placeholder="13006209" />
+                                      <input style="width: 80%"
+                                      type="" name=""
+                                      placeholder="ACADEMIC ENGLISH 2" />
+                                    </p>
+                                    <p><i>GPA:<input 
+                                    style="width: 50px;" type="input"
+                                    name="" value="" /></i></p>
+                                    <p><b>
+                                      <u>1st Semester. Year1. 2021-2022</u>
+                                    </b></p>
+                                    <p>
+                                      <input style="width: 15%;"
+                                      type="" name=""
+                                      placeholder="13006007" />
+                                      <input style="width: 80%"
+                                      type="" name=""
+                                      placeholder="CALCULUS 1" />
+                                      <input style="width: 15%;"
+                                      type="" name=""
+                                      placeholder="13006107" />
+                                      <input style="width: 80%"
+                                      type="" name=""
+                                      placeholder="INTRODUCTION TO LOGIC AND PROGRAMMING" />
+                                      <input style="width: 15%;"
+                                      type="" name=""
+                                      placeholder="13006108" />
+                                      <input style="width: 80%"
+                                      type="" name=""
+                                      placeholder="BASIC ELECTRICITY AND ELECTRONICS" />
+                                      <input style="width: 15%;"
+                                      type="" name=""
+                                      placeholder="13006301" />
+                                      <input style="width: 80%"
+                                      type="" name=""
+                                      placeholder="INTRODUCTION TO LOGIC" />
+                                      <input style="width: 15%;"
+                                      type="" name=""
+                                      placeholder="13016235" />
+                                      <input style="width: 80%"
+                                      type="" name=""
+                                      placeholder="C PROGRAMMING" />
+                                      <input style="width: 15%;"
+                                      type="" name=""
+                                      placeholder="13016236" />
+                                      <input style="width: 80%"
+                                      type="" name=""
+                                      placeholder="C PROGRAMMING LABORATORY" />
+                                    </p>
+                                    <p><i>GPS:<input 
+                                    style="width: 50px;" type="input"
+                                    name="" placeholder="XXX"></i> 
+                                    <i>GPA:<input style="width: 50px;"
+                                    type="input" name="" placeholder="XXX" />
+                                    </i></p>
+                                    <p><b><u>2nd Semester. Year1. 2021-2022</u></b></p>
+                                    <p>
+                                      <input style="width: 15%;"
+                                      type="" name=""
+                                      placeholder="13006008" />
+                                      <input style="width: 80%"
+                                      type="" name=""
+                                      placeholder="CALCULUS 2" />
+                                      <input style="width: 15%;"
+                                      type="" name=""
+                                      placeholder="13006303" />
+                                      <input style="width: 80%"
+                                      type="" name=""
+                                      placeholder="CULTURAL STUDIES" />
+                                      <input style="width: 15%;"
+                                      type="" name="" placeholder="13016105" />
+                                      <input style="width: 80%"
+                                      type="" name=""
+                                      placeholder="DISCRETE MATHEMATICS" />
+                                      <input style="width: 15%;"
+                                      type="" name=""
+                                      placeholder="13016204" />
+                                      <input style="width: 80%"
+                                      type="" name=""
+                                      placeholder="DIGITAL CIRCUIT AND LOGIC DESIGN" />
+                                      <input style="width: 15%;"
+                                      type="" name=""
+                                      placeholder="13016205" />
+                                      <input style="width: 80%"
+                                      type="" name=""
+                                      placeholder="DIGITAL CIRCUIT LABORATORY" />
+                                      <input style="width: 15%;"
+                                      type="" name=""
+                                      placeholder="13016209" />
+                                      <input style="width: 80%"
+                                      type="" name=""
+                                      placeholder="OBJECT-ORIENTED CONCEPTS AND PROGRAMMING" />
+                                      <input style="width: 15%;"
+                                      type="" name=""
+                                      placeholder="13016210" />
+                                      <input style="width: 80%"
+                                      type="" name=""
+                                      placeholder="OBJECT-ORIENTED PROGRAMMING LABORATORY" />
+                                    </p>
+                                    <p><i>GPS:<input 
+                                    style="width: 50px;" type="input"
+                                    name="" placeholder="XXX"></i> 
+                                    <i>GPA:<input style="width: 50px;"
+                                    type="input" name="" placeholder="XXX" />
+                                    </i></p>
+                                    <p><b>
+                                      <u>1st Semester. Year2. 2022-2023</u>
+                                    </b></p>
+                                    <p>
+                                      <input style="width: 15%;"
+                                      type="" name=""
+                                      placeholder="13006006" />
+                                      <input style="width: 80%"
+                                      type="" name=""
+                                      placeholder="LINEAR ALGEBRA" />
+                                      <input style="width: 15%;"
+                                      type="" name=""
+                                      placeholder="13006210" />
+                                      <input style="width: 80%"
+                                      type="" name=""
+                                      placeholder="TECHNICAL WRITING" />
+                                      <input style="width: 15%;"
+                                      type="" name=""
+                                      placeholder="13006403" />
+                                      <input style="width: 80%"
+                                      type="" name=""
+                                      placeholder="BUSINESS ADMINISTRATION" />
+                                      <input style="width: 15%;"
+                                      type="" name=""
+                                      placeholder="13016207" />
+                                      <input style="width: 80%"
+                                      type="" name=""
+                                      placeholder="COMPUTER ORGANIZATION AND ASSEMBLY LANGUAGE" />
+                                      <input style="width: 15%;"
+                                      type="" name=""
+                                      placeholder="13016208" />
+                                      <input style="width: 80%"
+                                      type="" name=""
+                                      placeholder="COMPUTER ORGANIZATION AND ASSEMBLY LANGUAGE LABORATORY" />
+                                      <input style="width: 15%;"
+                                      type="" name=""
+                                      placeholder="13016212" />
+                                      <input style="width: 80%"
+                                      type="" name=""
+                                      placeholder="DATA STRUCTURE AND ALGORITHM" />
+                                      <input style="width: 15%;"
+                                      type="" name=""
+                                      placeholder="13016213" />
+                                      <input style="width: 80%"
+                                      type="" name=""
+                                      placeholder="DATA STRUCTURE AND ALGORITHM LABORATORY" />
+                                      <input style="width: 15%;"
+                                      type="" name=""
+                                      placeholder="13016249" />
+                                      <input style="width: 80%"
+                                      type="" name=""
+                                      placeholder="ADVANCE OBJECT-ORIENTED PROGRAMMING" />
+                                    </p>
+                                    <p><i>GPS:<input style="width: 50px;"
+                                    type="input" name="" placeholder="XXX"></i>
+                                    <i>GPA:<input style="width: 50px;"
+                                    type="input" name="" placeholder="XXX" />
+                                    </i></p>
+                                    <p><b>Total number of credits earned:</b>
+                                    <input style="width: 75px"
+                                    type="input" name=""
+                                    placeholder="XX" /></p>
+                                  </td>
+                                  <td class="hasBorder" width="2.5%"
+                                  style="font-size:0.5rem">
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                  </td>
+                                  <td class="hasBorder" width="2.5%"
+                                  style="font-size:0.5rem">
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <input class="fullInput"
+                                    type="input" name="" value="" />
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                  </td>
+                                  <td class="hasBorder" width="45%">
+                                  </td>
+                                  <td class="hasBorder" width="2.5%"
+                                  style="font-size:0.5rem">
+                                  </td>
+                                  <td class="hasBorder" width="2.5%"
+                                  style="font-size:0.5rem">
+                                  </td>
+                              </tr>
+                            </table>
+                        </td>
+                        <td style="width:1%"></td>
+                      </tr>
+                      <tr>
+                        <td style="width:1%"></td>
+                        <td style="width:98%; text-align: right;">
+                          <input type="submit" name="" value="Submit">
+                        </td>
+                        <td style="width:1%"></td>
+                      </tr>
+                    </table>
+                  </form>
+              </td>
+              <td style="width:20%"></td>
+          </tr>
+      </table>
+  </body>
+</html>
+\end{minted}
+
+\section*{Output}
+
+
+	  \includegraphics[width=15cm]{../Output.png} % Adjust width as needed
+
+\end{document}

@@ -1,0 +1,370 @@
+\documentclass[12pt]{report} % You can use 'article' or 'book' class as well
+
+\usepackage{graphicx} % For including images
+\usepackage{minted}
+
+\begin{document}
+
+% Title page
+\begin{titlepage}
+	\centering
+	\vspace*{1cm} % Adjusts vertical space for the image
+	% Insert your image (use the actual path and filename of your image)
+	\includegraphics[width=0.3\textwidth]{../../images/KMITL Logo.png} % Adjust width as needed
+
+	\vspace{1cm} % Vertical space after the image
+	{\LARGE \textbf{Homework 4}} \\[0.5cm] % Title
+	\vspace{0.5cm}
+	{\large \textbf{01286233 Web Programming}} \\[0.5cm]
+	{\large \textbf{Software Engineering Program,}} \\[0.5cm]
+	{\large \textbf{Department of Computer Engineering,}} \\[0.5cm]
+	{\large \textbf{School of Engineering, KMITL}} \\[1cm]
+	{\Large 67011352 Theepakorn Phayonrat} \\[0.5cm] % Authors (Use \\ the separate authors)
+\end{titlepage}
+
+\section*{Code}
+
+\begin{minted}[fontsize=\small, breaklines, breakanywhere, breakindent=1em]{html}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Theepakorn 67011352 Resume</title>
+        <style>
+            html {
+                margin: 0 0;
+                padding: 1rem 1rem;
+                font-family: monospace;
+            }
+            body {
+                margin: auto;
+                justify-content: center;
+            }
+            div {
+                margin: 0 0;
+                padding: 0 0;
+            }
+            h1 {
+                font-size: 5rem;
+                margin: 2.5px;
+            }
+            h2 {
+                font-size: 3rem;
+                margin: 2.5px;
+            }
+            h3 {
+                font-size: 2rem;
+                margin: 2.5px;
+            }
+            h4 {
+                font-size: 1.5rem;
+                margin: 2.5px;
+            }
+            h5 {
+                font-size: 1.25rem;
+                margin: 2.5px;
+            }
+            p {
+                font-size: 16px;
+            }
+            hr {
+                border-top: solid black 5px;
+            }
+            li {
+                margin: 0;
+                padding: 0 10px;
+                font-size: 20px;
+            }
+            .page {
+                width: 1480px;
+                height: 2100px;
+                margin: auto;
+                padding: 10px;
+            }
+            .row-container {
+                display: flex;
+                flex-direction: row;
+            }
+            .col-container {
+                display: flex;
+                flex-direction: column;
+            }
+            .left {
+                width: 25%;
+                height: 100%;
+                background-color: lightblue;
+                padding: 5rem;
+            }
+            .right {
+                width: 75%;
+                height: 100%;
+                background-color: #DDDDDD;
+                padding: 5rem;
+            }
+            .pfp {
+                border-radius: 50%;
+                width: 100%;
+            }
+            .profile {
+                align-items: center;
+                width: 100%;
+                display: flex;
+            }
+            .icon {
+                margin: 5px;
+                width: 25px;
+                height: 25px;
+            }
+            .info {
+                width: 95%;
+                padding: 5px;
+            }
+            .small-left {
+                margin: 10px;
+                width: 25%;
+                height: 100%;
+            }
+            .small-right {
+                margin: 10px;
+                width: 75%;
+                height: 100%;
+            }
+            .small-hr {
+                border-top: solid grey 1px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="row-container page">
+            <div class="left middle-align">
+                <div style="height: 40%">
+                    <img class="pfp" src="https://avatars.githubusercontent.com/u/89683898?v=4" />
+                    <h1 style="text-align: center;">Theepakorn</h1>
+                    <h1 style="text-align: center;">Phayonrat</h1>
+                    <hr>
+                    <h3 style="text-align: center;">Software Engineering Student</h3>
+                </div>
+                <div style="height: 20%">
+                    <h2 style="text-align: center;">Profile</h2>
+                    <hr>
+                    <div class="profile">
+                        <img class="icon" src="https://uxwing.com/wp-content/themes/uxwing/download/location-travel-map/maps-pin-black-icon.png" />
+                        <p class="info">Airlink Residence Building 5 Romklao Rd. Lat Krabang Bangkok</p>
+                    </div>
+                    <div class="profile">
+                        <img class="icon" src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/envelope-icon.png" />
+                        <p class="info">pottarrpongs@gmail.com</p>
+                    </div>
+                    <div class="profile">
+                        <img class="icon" src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/phone-icon.png" />
+                        <p class="info">086-393-0486</p>
+                    </div>
+                    <div class="profile">
+                        <img class="icon" src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/calendar-line-icon.png" />
+                        <p class="info">12/11/2005</p>
+                    </div>
+                    <div class="profile">
+                        <img class="icon" src="https://uxwing.com/wp-content/themes/uxwing/download/transportation-automotive/car-icon.png" />
+                        <p class="info">Beep Beep!</p>
+                    </div>
+                </div>
+                <div style="height: 15%">
+                    <h2 style="text-align: center;">Skills</h2>
+                    <hr>
+                    <ul>
+                        <li>Vim Motions</li>
+                        <li>Linux Enjoyer</li>
+                        <li>Git</li>
+                        <li>Can work Terminal comfortably</li>
+                        <li>Due tomorrow, finished a week ago</li>
+                    </ul>
+                </div>
+                <div style="height: 15%">
+                    <h2 style="text-align: center;">Languages</h2>
+                    <hr>
+                    <ul>
+                        <li>English</li>
+                        <li>Thai</li>
+                        <li>Rust</li>
+                        <li>Python</li>
+                        <li>C</li>
+                    </ul>
+                </div>
+                <div style="height: 10%">
+                    <h2 style="text-align: center;">Hobbies</h2>
+                    <hr>
+                    <ul>
+                        <li>Ricing Linux</li>
+                        <li>Ricing Neovim</li>
+                        <li>Coding</li>
+                        <li>Working on Projects</li>
+                        <li>Vibing in Discord</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <h2>My internet connection is trash and so is my life...</h2>
+                <p>
+                    Hi, I'm Theepakorn Phayonrat, an undergraduate student understanding 
+                    a Bachelor's degree in Software Engineering at KMITL. While many 
+                    are drawn to fields like web development, mobile apps, and AI, 
+                    I believe the true heart of computing lies deeper — in the system itself.
+                </p>
+                <p>
+                    My goal is to become a skilled system programmer, and I’m always 
+                    eager to learn, experiment, and grow in this field. If you share a similar 
+                    interest or would like to connect, I’d love to hear from you!</p>
+                <p>
+                    My passion lies in system programming. I’m fascinated by the foundations that 
+                    make modern computing possible: the kernel, device drivers, operating 
+                    systems — the essential layers that support everything we build today. 
+                    To me, there’s something incredibly rewarding about understanding and 
+                    working with the low-level components that power all higher-level technologies.
+                </p>
+                <br>
+                <h2>Professional Experience</h2>
+                <hr>
+                <div class="col-container">
+                    <div class="row-container">
+                        <div class="small-left">
+                            <h4>Elementary System Programming Teacher Assistant</h4>
+                            <hr class="small-hr">
+                            <h5>King Mongkut's Institute of Technology</h5>
+                        </div>
+                        <div class="small-right">
+                            <h4>2025-Now</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis 
+                                nec magna non feugiat. Duis faucibus sagittis lacus sed suscipit. 
+                                Nullam egestas laoreet libero ac malesuada. Duis et nulla faucibus, 
+                                sodales nulla vel, finibus felis. Maecenas accumsan augue purus, 
+                                ut fringilla elit porta sed. Etiam id consequat ipsum, sed consequat 
+                                libero. Etiam molestie, augue a tristique pretium, odio est accumsan 
+                                arcu, quis pellentesque orci justo vel urna. Nam diam orci, finibus 
+                                vitae lorem ut, pellentesque congue magna.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="small-left">
+                            <h4>Secretary of Software Engineering Major</h4>
+                            <hr class="small-hr">
+                            <h5>King Mongkut's Institute of Technology</h5>
+                        </div>
+                        <div class="small-right">
+                            <h4>2024-Now</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis 
+                                nec magna non feugiat. Duis faucibus sagittis lacus sed suscipit. 
+                                Nullam egestas laoreet libero ac malesuada. Duis et nulla faucibus, 
+                                sodales nulla vel, finibus felis. Maecenas accumsan augue purus, 
+                                ut fringilla elit porta sed. Etiam id consequat ipsum, sed consequat 
+                                libero. Etiam molestie, augue a tristique pretium, odio est accumsan 
+                                arcu, quis pellentesque orci justo vel urna. Nam diam orci, finibus 
+                                vitae lorem ut, pellentesque congue magna.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="small-left">
+                            <h4>Head of School Paramedic</h4>
+                            <hr class="small-hr">
+                            <h5>Triam Udom Suksa Pattanakarn</h5>
+                        </div>
+                        <div class="small-right">
+                            <h4>2023-2024</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis 
+                                nec magna non feugiat. Duis faucibus sagittis lacus sed suscipit. 
+                                Nullam egestas laoreet libero ac malesuada. Duis et nulla faucibus, 
+                                sodales nulla vel, finibus felis. Maecenas accumsan augue purus, 
+                                ut fringilla elit porta sed. Etiam id consequat ipsum, sed consequat 
+                                libero. Etiam molestie, augue a tristique pretium, odio est accumsan 
+                                arcu, quis pellentesque orci justo vel urna. Nam diam orci, finibus 
+                                vitae lorem ut, pellentesque congue magna. Fusce rhoncus gravida auctor. 
+                                Nulla gravida odio sed dolor placerat, ut vulputate purus vehicula. 
+                                Morbi at urna maximus velit accumsan consectetur sit amet sit amet 
+                                turpis. Suspendisse potenti.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="small-left">
+                            <h4>ROTC Sergeant</h4>
+                            <hr class="small-hr">
+                            <h5>Thailand Department of Territorial Defense</h5>
+                        </div>
+                        <div class="small-right">
+                            <h4>2022-2024</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis 
+                                nec magna non feugiat. Duis faucibus sagittis lacus sed suscipit. 
+                                Nullam egestas laoreet libero ac malesuada. Duis et nulla faucibus, 
+                                sodales nulla vel, finibus felis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h2>Education</h2>
+                <hr>
+                <div class="col-container">
+                    <div class="row-container">
+                        <div class="small-left">
+                            <h4>2024-2027</h4>
+                        </div>
+                        <div class="small-right">
+                            <h3>Bachelor of Software Engineering</h3>
+                            <h4>King Mongkut's Institute of Technology</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis 
+                                nec magna non feugiat. Duis faucibus sagittis lacus sed suscipit. 
+                                Nullam egestas laoreet libero ac malesuada. Duis et nulla faucibus, 
+                                sodales nulla vel, finibus felis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="small-left">
+                            <h4>2020-2022</h4>
+                        </div>
+                        <div class="small-right">
+                            <h3>High School Science Mathematics Talented Program (Gifted)</h3>
+                            <h4>Triam Udom Suksa Pattanakarn</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis 
+                                nec magna non feugiat. Duis faucibus sagittis lacus sed suscipit. 
+                                Nullam egestas laoreet libero ac malesuada. Duis et nulla faucibus, 
+                                sodales nulla vel, finibus felis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div class="small-left">
+                            <h4>2018-2020</h4>
+                        </div>
+                        <div class="small-right">
+                            <h3>Middle School Science Mathematics Talented Program (Gifted)</h3>
+                            <h4>Triam Udom Suksa Pattanakarn</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis 
+                                nec magna non feugiat. Duis faucibus sagittis lacus sed suscipit. 
+                                Nullam egestas laoreet libero ac malesuada. Duis et nulla faucibus, 
+                                sodales nulla vel, finibus felis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+\end{minted}
+
+\newpage
+
+\section*{Output}
+
+
+	  \includegraphics[width=13cm]{../Output.png} % Adjust width as needed
+
+\end{document}
