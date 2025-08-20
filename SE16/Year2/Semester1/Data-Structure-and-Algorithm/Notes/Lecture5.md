@@ -10,6 +10,18 @@ Answer: A collection of data where you can `add/remove` a data `to/from` its `*t
 
 - This makes it `LIFO` (Last in first out).
 
+## Stack ADT
+
+- Required operations
+    - `void push(int d)`
+    - `int pop()`
+- Convenient operation
+    - `int top()`
+- Utility operations
+    - `boolean isFull()`
+    - `boolean isEmpty()`
+    - `String toString()`
+
 ```java
 // Stack implementation for int
 public class MyStack {
@@ -34,25 +46,13 @@ public class MyStack {
 }
 ```
 
-## Stack ADT
-
-- Required operations
-    - `void push(int d)`
-    - `int pop()`
-- Convenient operation
-    - `int top()`
-- Utility operations
-    - `boolean isFull()`
-    - `boolean isEmpty()`
-    - `String toString()`
-
 ### Stack (Array Implementation)
 
 ```java
 // Stack implementation for int made with Array
 public class MyStackA {
     int MAX_SIZE = 100;
-    int stack[] = new intp[MAX_SIZE];
+    int stack[] = new int[MAX_SIZE];
     int top = 0;
 
     public void push(int d) {

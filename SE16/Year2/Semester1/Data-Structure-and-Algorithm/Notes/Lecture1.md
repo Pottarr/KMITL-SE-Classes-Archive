@@ -1,24 +1,39 @@
 # Chapter 1: Introduction
 
-Data VS Information
+> Data Structures + Algorithms = Program
 
-Data = Fact
-Information = Processed Fact
+## Data VS Information
 
-Therefore, Data = Raw Fact and after being processed it becomes Information.
+- Data = Fact  
+- Information = Processed Fact
 
-In this course Computer is just refer to Hardware being used ini the process.
+> [!IMPORTANT]  
+> Therefore, Data = Raw Fact and after being processed it becomes Information.
 
-Algorithm is just like a way to achieve a certain goal.
+> [!NOTE]  
+> In this course Computer is just refer to Hardware being used in the process.
+
+### Basic Data Operations (CRUD)
+
+- C $\rightarrow$ Create $\rightarrow$ POST request
+- E $\rightarrow$ Retrieve $\rightarrow$ GET request
+- C $\rightarrow$ Update $\rightarrow$ PUT request
+- C $\rightarrow$ Create $\rightarrow$ DELETE request
+
+> Algorithm is just like a way to achieve a certain goal.
+
+## Abstact Data Types
 
 We abstact a basic Data Structure to create new Data Structures.
 
 Abstact = Hide the detail
 
-Abstract Data Type
+### List Abstract Data Types
 
 - Stack
 - Queue
 - Heap
 - Tree
 - Graph
+
+
