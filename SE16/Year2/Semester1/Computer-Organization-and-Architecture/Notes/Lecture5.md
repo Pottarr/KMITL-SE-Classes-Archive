@@ -18,4 +18,9 @@
 
 ## Virtual Address VS Physical Address Definition
 
+## Paging
 
+## Objective
+
+- Know how to use Page in and Page out in memory
+- Benefits and drawbacks of DMA

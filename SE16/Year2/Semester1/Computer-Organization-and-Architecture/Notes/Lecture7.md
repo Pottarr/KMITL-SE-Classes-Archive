@@ -21,11 +21,20 @@ rights, owners, timestamps, size, pointers to data blocks
 >   - Windows: Manually
 >   - MacOS and Linux: Automatically
 
+> Block pointers
+> - Size: 1028B
 
 ### Linux File System Layout
 
-- Normally the part of the partition which crash the system is the
-Super Blocks
+#### Partition
+
+Normally the part of the partition which crash the system is the
+Super Blocks  
+
+#### Boot Block
+
+OS can boot that partition if and only if it has a good condition Boot
+Block  
 
 ## Secure Digital (SD) Card
 
@@ -55,9 +64,12 @@ The size of a block typically ranges from 128KB to 4MB, depending on
 the memory of the memory architecture.  
 A block usually contains 64 to 256 pages.  
 
+## Hard Disk (HDD)
 
+### Redundant Array of Independent Disks (RAID)
 
-## Redundant Array of Independent Disks (RAID)
+RAID is how you link your HDD together and take the benefit of
+the RAID type  
 
 ### RAID 0
 
@@ -90,3 +102,10 @@ A block usually contains 64 to 256 pages.
 ## Optical Memory
 
 
+## Objective
+
+- The best we can manage storage, the best we can use the computer
+effiently
+- How File System are created $\rightarrow$ E.g. `inode`, `directory`,
+`link`
+- Know the benefits and drawbacks of each HDD RAID
